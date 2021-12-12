@@ -88,14 +88,14 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--min_price",
-        type=int,
+        type=float,
         help="Minimum price limit",
         required=True
     )
 
     parser.add_argument(
         "--max_price",
-        type=int,
+        type=float,
         help="Maximum price limit",
         required=True
     )
@@ -104,3 +104,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     go(args)
+    
+    
